@@ -1,0 +1,119 @@
+html, body{
+  height: 100%;
+    font-size: 62.5%;
+}
+
+body{
+  margin: 0;
+  background:
+linear-gradient(135deg, black 21px, #505050 22px, #505050 24px, transparent 24px, transparent 67px, #505050 67px, #505050 69px, transparent 69px),
+linear-gradient(225deg, black 21px, #505050 22px, #505050 24px, transparent 24px, transparent 67px, #505050 67px, #505050 69px, transparent 69px)0 64px;
+background-color: black;
+background-size: 64px 128px;
+}
+
+nav{
+  display: flex;
+  width: 100%;
+  height: 20%;
+  align-items: center;
+  justify-content: center;
+    font-family: 'Rock Salt', cursive;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  margin: 0 3vw;
+    font-size: 2rem;
+}
+
+a:hover{
+    color: turquoise;
+    text-shadow: 0 0 5px orchid, 0 0 10px orchid, 0 0 15px orchid, 0 0 20px orchid, 0 0 30px orchid, 0 0 40px orchid, 0 0 55px orchid, 0 0 75px orchid, 2px 2px 2px rgba(255,0,0,0);
+}
+
+#logo{
+  width: 25%;
+  height: auto;
+}
+
+#logo-img{
+    width: 100%;
+    height: auto;
+}
+
+section{
+  display: flex;
+  width: 100%;
+  height: 100%%;
+  align-items: center;
+  justify-content: center;
+    font-family: 'Rock Salt', cursive;
+}
+
+
+.column {
+  text-decoration: none;
+  color: white;
+  margin: 1vw 0.5vw;
+    width: 25vw;
+    height: 21.5vw;
+}
+
+#member{
+    width: 24.5vw;
+    height: 21vw;
+    padding: 0.25vw 0.25vw 0.25vw 0.25vw;
+}
+
+footer{
+  display: flex;
+  width: 100%;
+  height: 10%;
+  align-items: center;
+  justify-content: center; 
+}
+
+#social{
+    margin: 2vw 2vw;
+}
+
+.dates{
+    font-family: 'Bowlby One', cursive; 
+    color: white;
+    font-size: 2rem;
+}
+.date{
+    width: 10vw;
+    height: auto;
+}
+
+.venue{
+    width: 50vw;
+    height: auto;
+}
+.tickets{
+    width: 10vw;
+    height: auto;
+}
+
+.dates li{
+    display: flex;
+    align-content: center;
+    padding-bottom:3vh;
+}
+
+.dates div{
+    background-color: black;
+    margin-left: 3vw;
+    border-radius: 15px 15px 15px 15px;
+    border-bottom: 2px solid grey;
+    text-align: center;
+}
+
+.dates a{
+    text-align: center;
+    margin: 0px;
+}
+
