@@ -2,14 +2,16 @@
 <html>
     
     <head>
+        <title>Gorillaz</title>
         <link rel="stylesheet" href="CSS/css.css">
-        <link href="JS/Javascript.js" rel="stylesheet">
+        <script type="text/javascript" src="JS/Javascript.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Bowlby+One|Rock+Salt" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     
     <body>
         
-        <nav>
+        <nav class="desktop">
             <a href="shop.html">Shop</a>
             <a href="tour-dates.html">Tour Dates</a>
             <a id="logo" href="index.html"><img src="Assets/logo.png"/ id="logo-img"></a>
@@ -22,6 +24,47 @@
             </div>
             <a href="customizer.html">Customizer</a>
         </nav>
+        
+        <nav class="mobile">
+            <div class="dropdown">
+                <button class="drop-button" id="menu">Menu</button>
+                <div class="drop-content" id="drop">
+                    <a href="index.html">Home</a>
+                    <a href="albums.html">Albums</a>
+                    <a href="videos.html">Videos</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="tour-dates.html">Tour Dates</a>
+                    <p id="close">Close</p>
+                </div>
+            </div>
+        </nav>
+        
+        <section class="shop">
+            <div class="column1">
+                <img src="Assets/2d-shirt.png">
+                <p>2-D T-shirt</p>
+                <button>Add to cart.</button>
+                <img src="Assets/gorillaz-hoodie.png">
+                <p>Gorillaz Hoodie</p>
+                <button>Add to cart.</button>
+            </div>
+            <div class="column2">
+                <img src="Assets/gorillaz-shirt.png">
+                <p>Gorillaz Shirt</p>
+                <button>Add to cart.</button>
+                <img src="Assets/the-now-now-vinyl.png">
+                <p>The Now Now Vinyl</p>
+                <button>Add to cart.</button>
+            </div>
+            <div class="column3">
+                <img src="Assets/plastic-beach-vinyl.jpg">
+                <p>Plastic Beach Vinyl</p>
+                <button>Add to cart.</button>
+                <img src="Assets/humanz-vinyl.jpg">
+                <p>Humanz Vinyl</p>
+                <button>Add to cart.</button>
+            </div>
+        </section>
         
         <footer>
             <a id="social" href="https://twitter.com/gorillaz"><img src="Assets/twitter.png" id="social-img"></a>

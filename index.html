@@ -2,14 +2,16 @@
 <html>
     
     <head>
+        <title>Gorillaz</title>
         <link rel="stylesheet" href="CSS/css.css">
-        <script src="JS/Javascript.js"></script>
+        <script type="text/javascript" src="JS/Javascript.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Bowlby+One|Rock+Salt" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     
     <body>
         
-        <nav>
+        <nav class="desktop">
             <a href="shop.html">Shop</a>
             <a href="tour-dates.html">Tour Dates</a>
             <a id="logo" href="index.html"><img src="Assets/logo.png"/ id="logo-img"></a>
@@ -23,7 +25,21 @@
             <a href="customizer.html">Customizer</a>
         </nav>
         
-        <section>
+        <nav class="mobile">
+            <div class="dropdown">
+                <button class="drop-button" id="menu">Menu</button>
+                <div class="drop-content" id="drop">
+                    <a href="index.html">Home</a>
+                    <a href="albums.html">Albums</a>
+                    <a href="videos.html">Videos</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="tour-dates.html">Tour Dates</a>
+                    <p id="close">Close</p>
+                </div>
+            </div>
+        </nav>
+        
+        <section class="members">
             <div> 
                 <div class="member" style="background-color:salmon;">
                     <img id="2d" src="Assets/2d.png">

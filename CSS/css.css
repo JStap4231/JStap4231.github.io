@@ -12,7 +12,21 @@ background-color: black;
 background-size: 64px 128px;
 }
 
-nav{
+footer{
+  display: flex;
+  width: 100%;
+  height: 10%;
+  align-items: center;
+  justify-content: center; 
+}
+
+#social{
+    margin: 2vw 2vw;
+}
+
+/* nav bar css*/
+
+.desktop{
   display: flex;
   width: 100%;
   height: 20%;
@@ -21,16 +35,20 @@ nav{
     font-family: 'Rock Salt', cursive;
 }
 
-nav a{
+.desktop a{
   text-decoration: none;
   color: white;
   margin: 0 3vw;
     font-size: 2rem;
 }
 
-nav a:hover{
+.desktop a:hover{
     color: turquoise;
     text-shadow: 0 0 5px orchid, 0 0 10px orchid, 0 0 15px orchid, 0 0 20px orchid, 0 0 30px orchid, 0 0 40px orchid, 0 0 55px orchid, 0 0 75px orchid, 2px 2px 2px rgba(255,0,0,0);
+}
+
+.mobile{
+    display: none;
 }
 
 .dropdown{
@@ -66,7 +84,7 @@ nav a:hover{
     width: 10vw
 }
 
-.dropdown:hover .drop-content{
+.desktop .dropdown:hover .drop-content{
     display: block;
 }
 
@@ -80,10 +98,12 @@ nav a:hover{
     height: auto;
 }
 
-section{
+/*index css*/
+
+.members, .dates{
   display: flex;
   width: 100%;
-  height: 100%%;
+  height: 100%;
   align-items: center;
   justify-content: center;
 }
@@ -105,17 +125,9 @@ section img{
     padding: 0.25vw 0.25vw 0.25vw 0.25vw;
 }
 
-footer{
-  display: flex;
-  width: 100%;
-  height: 10%;
-  align-items: center;
-  justify-content: center; 
-}
 
-#social{
-    margin: 2vw 2vw;
-}
+/* tour dates css*/
+
 
 .dates{
     font-family: 'Bowlby One', cursive; 
@@ -166,18 +178,166 @@ footer{
     margin: 0px;
 }
 
+/*video css*/
+
 .video {
-  margin: 1vw 0.5vw;
-    position: relative;
+    text-align: center;
+    margin-bottom: 5vh;
 }
 
-.album {
-  margin: 1vw 0.5vw;
-    position: relative;
+.yt-videos .column{
+    width: 33.3%;
+    float: left;
+    height: 100%;
 }
 
-@media screen (max-width: 420px) {
-    nav a{
-        color: red;
+/* album css*/
+
+.albums .column{
+    width: 33.3%;
+    float: left;
+    height: 100%;
+}
+
+.album{
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+/* shop css*/
+
+.shop{
+    width: 100%;
+    height: auto;
+}
+
+.shop p{
+    width: 75%;
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Bowlby One', cursive;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+}
+
+
+.shop div{
+  float: left;
+    width: 33.3%;
+    height: 100%;
+}
+
+.shop img, .shop button{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.shop button{
+  background-color: white;
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+    border-radius: 15px;
+}
+
+.shop img{
+    padding: 0px;
+    border: solid 5px grey;
+    border-radius: 15px;
+    margin-top: 5vh;
+}
+
+
+/* mobile css*/
+
+@media screen and (max-width: 420px) {
+    footer{
+        display: none;
+    }
+    
+    /* nav css*/
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: flex;
+        width: 100%;
+        height: auto;
+    }
+
+    
+    .dropdown{
+        float: left;
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
+    }
+
+    .drop-button{
+        font-size: 3rem;  
+        border: none;
+        outline: none;
+        color: white;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+        height: auto;
+        font-family: 'Rock Salt', cursive;
+    }
+
+    .drop-content{
+        float: left;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: auto;
+    }
+
+    .drop-content a, .drop-content p{
+        float: none;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        margin: 0px;
+        background-color: black;
+        border-radius: 15px 15px 15px 15px;
+        border-bottom: 2px solid grey;
+        width: 100%;
+        height: 10vh;
+        color: white;
+        font-size: 3rem;
+        z-index: 1;
+        font-family: 'Bowlby One', cursive;
+    }
+
+    #drop{
+        display: none;
+    }
+    
+    /*tour dates css*/
+    .dates{
+        font-size: 0.5rem;
+    }
+    
+    /* shop css*/
+    .shop div{
+        width: 100%;
+    }
+    
+    /*albums css*/
+    .albums .column{
+        width: 100%;
+    }
+    
+    /*videos css*/
+    .yt-videos .column{
+        width: 100%;
     }
 }
