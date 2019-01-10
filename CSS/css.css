@@ -299,6 +299,14 @@ canvas{
     align-content: center;
 }
 
+h1{
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    font-family: 'Bowlby One', cursive;
+}
+
 /* mobile css*/
 
 @media screen and (max-width: 420px) {
