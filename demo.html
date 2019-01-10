@@ -2,26 +2,44 @@
 <html>
     
     <head>
+        <title>Gorillaz</title>
         <link rel="stylesheet" href="CSS/css.css">
-        <link href="JS/Javascript.js" rel="stylesheet">
+        <script type="text/javascript" src="JS/Javascript.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Bowlby+One|Rock+Salt" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     
     <body>
         
-        <nav>
+        <nav class="desktop">
             <a href="shop.html">Shop</a>
             <a href="tour-dates.html">Tour Dates</a>
             <a id="logo" href="index.html"><img src="Assets/logo.png"/ id="logo-img"></a>
             <div class="dropdown">
                 <button class="drop-button">Music</button>
                 <div class="drop-content">
-                    <a href="Videos.html">Videos</a>
-                    <a href="Albums.html">Albums</a>
+                    <a href="videos.html">Videos</a>
+                    <a href="albums.html">Albums</a>
                 </div>
             </div>
             <a href="customizer.html">Customizer</a>
         </nav>
+        
+        <nav class="mobile">
+            <div class="dropdown">
+                <button class="drop-button" id="menu">Menu</button>
+                <div class="drop-content" id="drop">
+                    <a href="index.html">Home</a>
+                    <a href="albums.html">Albums</a>
+                    <a href="videos.html">Videos</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="tour-dates.html">Tour Dates</a>
+                    <p id="close">Close</p>
+                </div>
+            </div>
+        </nav>
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/so9T2FtKmkY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         
         <footer>
             <a id="social" href="https://twitter.com/gorillaz"><img src="Assets/twitter.png" id="social-img"></a>
